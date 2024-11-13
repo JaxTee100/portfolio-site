@@ -1,9 +1,22 @@
-import Image from "next/image";
+import AboutSection from "../components/sections/about-section/AboutSection"
+import ContactSection from "../components/sections/contact-section/ContactSection";
+import FeaturedProjects from "../components/sections/featured-projects/FeaturedProjects";
+import ProfileSection from "../components/sections/profile-section/ProfileSection"
+import SkillsSection from "../components/sections/skills-section/SkillsSection"
+
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      Portfolio
+    <div className=" p-2 lg:p4">
+      
+      <ProfileSection />
+
+
+      <AboutSection />
+      <SkillsSection />
+      <FeaturedProjects />
+      <ContactSection />
     </div>
   );
 }
